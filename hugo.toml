@@ -1,0 +1,15 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Marvin LC Hoffman'
+theme = 'hugo-arcana'
+
+sectionPagesMenu = 'main'
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20

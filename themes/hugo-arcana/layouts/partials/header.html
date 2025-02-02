@@ -1,0 +1,37 @@
+<div id="header">
+    {{ if hugo.IsMultilingual }}
+        {{- partial "languages.html" . }}
+    {{- end -}}
+    <div id="logo-wrapper"><h1><a href="{{ .Site.BaseURL }}" id="logo">
+        {{- if .Site.Data.globalheader.image }}
+            <img src="{{ .Site.Data.globalheader.image | relURL }}" alt="{{ .Site.Data.globalheader.image_alt }}" />
+        {{- end }}
+        {{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{ else }}{{ .Site.Title }}{{ end }}
+    </a></h1></div>
+
+    <nav id="nav">
+        <ul>
+            {{- range .Site.Menus.main }}
+                <li class="{{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}current{{ end }}">
+                    <a href="{{ .URL | default "#" }}">{{ .Name }}</a>
+                    {{- if .HasChildren -}}
+                    <ul>
+                        {{- range .Children }}
+                        <li class="{{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}current{{ end }}">
+                            <a href="{{ .URL | default "#" }}">{{ .Name }}</a>
+                            {{- if .HasChildren -}}
+                            <ul>
+                                {{- range .Children }}
+                                <li class="{{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}current{{ end }}">
+                                    {{/* aoeu fix 'current' thing */}}
+                                    <a href="{{ .URL | default "#" }}">{{ .Name }}</a>
+                                {{- end }}
+                            </ul>
+                            {{- end -}}
+                        {{- end }}
+                    </ul>
+                    {{- end -}}
+            {{- end }}
+        </ul>
+    </nav>
+</div>

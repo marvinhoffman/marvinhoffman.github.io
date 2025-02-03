@@ -12,6 +12,7 @@ theme = 'ananke'
     subtitle = 'cool author quote'
     [params.contact]
         email = 'marvin@marvinlchoffman.com'
+        
 
 sectionPagesMenu = 'main'
 [menus]

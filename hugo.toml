@@ -1,7 +1,17 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Marvin LC Hoffman'
-theme = 'hugo-arcana'
+theme = 'ananke'
+
+[pagination]
+    disableAliases = false
+    pagerSize = 2
+    path = 'page'
+
+[params]
+    subtitle = 'cool author quote'
+    [params.contact]
+        email = 'marvin@marvinlchoffman.com'
 
 sectionPagesMenu = 'main'
 [menus]
@@ -13,3 +23,11 @@ sectionPagesMenu = 'main'
     name = 'About'
     pageRef = '/about'
     weight = 20
+  [[menus.main]]
+    name = 'Works'
+    pageRef = '/works'
+    weight = 30
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 40

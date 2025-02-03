@@ -5,6 +5,8 @@ title = 'Lonnie Stokes'
 author = 'Marvin LC Hoffman'
 Tags = ['Short Story','Works']
 
+weight = 3
+
 +++
 
 “You ripped my scab you shithead.”

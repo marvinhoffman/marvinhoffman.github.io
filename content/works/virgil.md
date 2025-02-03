@@ -4,6 +4,7 @@ draft = false
 title = 'Virgil Stooksbury'
 author = 'Marvin LC Hoffman'
 Tags = ['Short Story','Works']
+weight = 1
 
 +++
 

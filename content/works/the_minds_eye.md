@@ -5,6 +5,8 @@ title = "The Mind's Eye"
 author = 'Marvin LC Hoffman'
 Tags = ['Short Story','Works']
 
+weight = 2
+
 +++
 
 Kathy turned the eye of the stove on, its blood red coil searing the events of the evening into her mind, dulling her disturbed emotions. Hands shaking, she poured the peeled tomatoes into a saucepan, and added the dried noodles. *These are Teddy’s favorites*, Kathy thought glancing into the living room as she walked to the rubbish bin, Kathy could just see the edge of Ted’s slippers resting on the floor in front of the couch. *God, he would watch that idiot box all day and night if he could,* Kathy thought.

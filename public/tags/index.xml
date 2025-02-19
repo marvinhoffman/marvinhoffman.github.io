@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Marvin LC Hoffman</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://example.org/tags/</link>
     <description>Recent content in Tags on Marvin LC Hoffman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2025 11:40:56 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drafts</title>
-      <link>http://localhost:1313/tags/drafts/</link>
+      <link>https://example.org/tags/drafts/</link>
       <pubDate>Sun, 02 Feb 2025 11:40:56 -0500</pubDate>
-      <guid>http://localhost:1313/tags/drafts/</guid>
+      <guid>https://example.org/tags/drafts/</guid>
       <description></description>
     </item>
     <item>
       <title>Short Story</title>
-      <link>http://localhost:1313/tags/short-story/</link>
+      <link>https://example.org/tags/short-story/</link>
       <pubDate>Sun, 02 Feb 2025 11:40:56 -0500</pubDate>
-      <guid>http://localhost:1313/tags/short-story/</guid>
+      <guid>https://example.org/tags/short-story/</guid>
       <description></description>
     </item>
     <item>
       <title>Works</title>
-      <link>http://localhost:1313/tags/works/</link>
+      <link>https://example.org/tags/works/</link>
       <pubDate>Sun, 02 Feb 2025 11:40:56 -0500</pubDate>
-      <guid>http://localhost:1313/tags/works/</guid>
+      <guid>https://example.org/tags/works/</guid>
       <description></description>
     </item>
     <item>
       <title>Example</title>
-      <link>http://localhost:1313/tags/example/</link>
+      <link>https://example.org/tags/example/</link>
       <pubDate>Thu, 30 Jan 2025 01:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/example/</guid>
+      <guid>https://example.org/tags/example/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
+      <link>https://example.org/tags/hugo/</link>
       <pubDate>Thu, 30 Jan 2025 01:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
+      <guid>https://example.org/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Musings</title>
-      <link>http://localhost:1313/tags/musings/</link>
+      <link>https://example.org/tags/musings/</link>
       <pubDate>Thu, 30 Jan 2025 01:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/musings/</guid>
+      <guid>https://example.org/tags/musings/</guid>
       <description></description>
     </item>
     <item>
       <title>Post</title>
-      <link>http://localhost:1313/tags/post/</link>
+      <link>https://example.org/tags/post/</link>
       <pubDate>Thu, 30 Jan 2025 01:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/post/</guid>
+      <guid>https://example.org/tags/post/</guid>
       <description></description>
     </item>
   </channel>

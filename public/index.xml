@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marvin LC Hoffman</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content on Marvin LC Hoffman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2025 11:40:56 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Virgil Stooksbury</title>
-      <link>http://localhost:1313/portfolio/virgil/</link>
+      <link>https://example.org/portfolio/virgil/</link>
       <pubDate>Fri, 31 Jan 2025 12:46:45 -0500</pubDate>
-      <guid>http://localhost:1313/portfolio/virgil/</guid>
+      <guid>https://example.org/portfolio/virgil/</guid>
       <description>&lt;p&gt;The family gathered in the parlor, which was cold. The cold was good for Virgil, as well as the potato salad, which everyone seemed to bring some concoction of. Hotel California played on an antique cassette player, as everyone made small talk. Murmured variances of “he looks so good” were on everyone’s lips. I didn’t agree. Someone had put a smile on Virgil’s face. I’d never seen Virgil smile in my life. His face would relax from time to time, pretty much the closest to a smile he’d ever had. Typically, Virgil&amp;rsquo;s expression was  an intense quizzical look. Because he was always figuring something out; some extravagant plan to hit the big time. And today’s event brings one of his to mind.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Mind&#39;s Eye</title>
-      <link>http://localhost:1313/portfolio/the_minds_eye/</link>
+      <link>https://example.org/portfolio/the_minds_eye/</link>
       <pubDate>Sun, 02 Feb 2025 11:40:56 -0500</pubDate>
-      <guid>http://localhost:1313/portfolio/the_minds_eye/</guid>
+      <guid>https://example.org/portfolio/the_minds_eye/</guid>
       <description>&lt;p&gt;Kathy turned the eye of the stove on, its blood red coil searing the events of the evening into her mind, dulling her disturbed emotions. Hands shaking, she poured the peeled tomatoes into a saucepan, and added the dried noodles. &lt;em&gt;These are Teddy’s favorites&lt;/em&gt;, Kathy thought glancing into the living room as she walked to the rubbish bin, Kathy could just see the edge of Ted’s slippers resting on the floor in front of the couch. &lt;em&gt;God, he would watch that idiot box all day and night if he could,&lt;/em&gt; Kathy thought.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lonnie Stokes</title>
-      <link>http://localhost:1313/portfolio/lonnie_stokes/</link>
+      <link>https://example.org/portfolio/lonnie_stokes/</link>
       <pubDate>Sun, 02 Feb 2025 11:35:13 -0500</pubDate>
-      <guid>http://localhost:1313/portfolio/lonnie_stokes/</guid>
+      <guid>https://example.org/portfolio/lonnie_stokes/</guid>
       <description>&lt;p&gt;“You ripped my scab you shithead.”&lt;/p&gt;&#xA;&lt;p&gt;Lonnie held his arm up to my face, “I ought to make you eat it Harmon.”&lt;/p&gt;&#xA;&lt;p&gt;“You did it L-Lonnie.” I said. “You di- did it trying to take my lunch box.” My voice hitching as I barely held back the tears.&lt;/p&gt;&#xA;&lt;p&gt;“Only a queer would have a Scooby-Do lunch box Harmon. And you’re a damned queer if I ever saw one.”&lt;/p&gt;&#xA;&lt;p&gt;It was an understatement that Lonnie Stokes was the bane of my existence on my bus rides home. I watched as Lonnie picked at the scab — one of three perfect little circles on his left arm. His hair stuck out every which way; especially the hair around his ears, swooping up to the skies, making his John Deere hat look like a bird about to take flight. His t-shirt had a rip under the right sleeve, and I could see a purplish bruise with yellow edges.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://example.org/about/</link>
       <pubDate>Thu, 30 Jan 2025 09:54:44 -0500</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/bio_pic.jpeg&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;In a London pub.&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA; Marvin L. C. Hoffman is a fiction author specializing in thrillers and crime dramas. With a background in Navy nuclear submarines, Health Physics at the Oak Ridge National Laboratory, and software engineering, Marvin draws inspiration from a multitude of life experiences. His stories explore regular people responding to and (hopefully) overcoming life-altering events.&lt;/p&gt;&#xA;&lt;p&gt;Marvin is currently working on an Appalachian crime drama as well as a crime thriller set in &amp;rsquo;80s Las Vegas. When not writing, he can be found in the woods hiking, on the water in his lake kayak, or quite possibly rolling dice at a D&amp;amp;D table.&lt;/p&gt;</description>
+      <guid>https://example.org/about/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://example.org/bio_pic.jpeg&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;In a London pub.&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA; Marvin L. C. Hoffman is a fiction author specializing in thrillers and crime dramas. With a background in Navy nuclear submarines, Health Physics at the Oak Ridge National Laboratory, and software engineering, Marvin draws inspiration from a multitude of life experiences. His stories explore regular people responding to and (hopefully) overcoming life-altering events.&lt;/p&gt;&#xA;&lt;p&gt;Marvin is currently working on an Appalachian crime drama as well as a crime thriller set in &amp;rsquo;80s Las Vegas. When not writing, he can be found in the woods hiking, on the water in his lake kayak, or quite possibly rolling dice at a D&amp;amp;D table.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Example Post</title>
-      <link>http://localhost:1313/posts/example/</link>
+      <link>https://example.org/posts/example/</link>
       <pubDate>Thu, 30 Jan 2025 01:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/example/</guid>
+      <guid>https://example.org/posts/example/</guid>
       <description>A brief summary of the post.</description>
     </item>
     <item>
       <title>Primarypost</title>
-      <link>http://localhost:1313/posts/primarypost/</link>
+      <link>https://example.org/posts/primarypost/</link>
       <pubDate>Wed, 29 Jan 2025 10:56:01 -0500</pubDate>
-      <guid>http://localhost:1313/posts/primarypost/</guid>
+      <guid>https://example.org/posts/primarypost/</guid>
       <description>&lt;p&gt;[] thing to do 1&lt;/p&gt;</description>
     </item>
   </channel>

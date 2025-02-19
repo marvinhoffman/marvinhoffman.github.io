@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drafts on Marvin LC Hoffman</title>
-    <link>http://localhost:1313/tags/drafts/</link>
+    <link>https://example.org/tags/drafts/</link>
     <description>Recent content in Drafts on Marvin LC Hoffman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2025 11:40:56 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/drafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Mind&#39;s Eye</title>
-      <link>http://localhost:1313/portfolio/the_minds_eye/</link>
+      <link>https://example.org/portfolio/the_minds_eye/</link>
       <pubDate>Sun, 02 Feb 2025 11:40:56 -0500</pubDate>
-      <guid>http://localhost:1313/portfolio/the_minds_eye/</guid>
+      <guid>https://example.org/portfolio/the_minds_eye/</guid>
       <description>&lt;p&gt;Kathy turned the eye of the stove on, its blood red coil searing the events of the evening into her mind, dulling her disturbed emotions. Hands shaking, she poured the peeled tomatoes into a saucepan, and added the dried noodles. &lt;em&gt;These are Teddy’s favorites&lt;/em&gt;, Kathy thought glancing into the living room as she walked to the rubbish bin, Kathy could just see the edge of Ted’s slippers resting on the floor in front of the couch. &lt;em&gt;God, he would watch that idiot box all day and night if he could,&lt;/em&gt; Kathy thought.&lt;/p&gt;</description>
     </item>
   </channel>

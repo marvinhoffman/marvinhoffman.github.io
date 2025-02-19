@@ -8,7 +8,7 @@ Author = 'M. L. C. Hoffman'
 
 +++
 
-Marvin L. C. Hoffman is a fiction author specializing in thrillers and crime dramas. With a background in Navy nuclear submarines, Oak Ridge National Laboratory, and software engineering, Marvin draws inspiration from a multitude of life experiences. His stories explore regular people responding to and (hopefully) overcoming life-altering events.
+{{< figure src="/bio_pic.jpeg" title="In a London pub." >}} Marvin L. C. Hoffman is a fiction author specializing in thrillers and crime dramas. With a background in Navy nuclear submarines, Health Physics at the Oak Ridge National Laboratory, and software engineering, Marvin draws inspiration from a multitude of life experiences. His stories explore regular people responding to and (hopefully) overcoming life-altering events.
 
 
 

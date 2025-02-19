@@ -26,6 +26,9 @@
         <h1 class="f2 f-subheadline-l fw2 light-red mb0 lh-title">
           {{ .Title | default .Site.Title }}
         </h1>
+        <h3 class="fw1 f5 f3-l light-red measure-wide-l center lh-copy mt3 mb4">
+          "{{ .Site.Params.Subtitle}}"
+        </h3>
         {{ with .Params.description }}
           <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
             {{ . }}

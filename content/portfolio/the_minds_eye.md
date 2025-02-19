@@ -2,8 +2,9 @@
 date = '2025-02-02T11:40:56-05:00'
 draft = false
 title = "The Mind's Eye"
+subtitle = 'cool quote'
 author = 'Marvin LC Hoffman'
-Tags = ['Short Story','Works']
+Tags = ['Short Story','Works','Drafts']
 
 weight = 2
 

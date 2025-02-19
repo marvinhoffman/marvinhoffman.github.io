@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Marvin LC Hoffman'
+subtitle = 'cool quote goes here'
 theme = 'ananke'
 
 [pagination]
@@ -10,6 +11,7 @@ theme = 'ananke'
 
 [params]
     subtitle = 'cool author quote'
+    description = 'a description'
     [params.contact]
         email = 'marvin@marvinlchoffman.com'
 
@@ -26,7 +28,7 @@ sectionPagesMenu = 'main'
     weight = 20
   [[menus.main]]
     name = 'Portfolio'
-    pageRef = '/works'
+    pageRef = '/portfolio'
     weight = 30
   [[menus.main]]
     name = 'Posts'

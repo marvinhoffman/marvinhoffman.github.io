@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Marvin LC Hoffman'
+title = 'Marvin L.C. Hoffman'
 theme = 'ananke'
 
 [pagination]
@@ -11,7 +11,7 @@ theme = 'ananke'
 [params]
     subtitle = "A good story is a dream shared by the author and the reader. Anything that wakes the reader from the dream is a mortal sin."
     quotecredit = 'Victor J. Banis'
-    description = 'a description'
+    #description = 'a description'
     [params.contact]
         email = 'marvin@marvinlchoffman.com'
 

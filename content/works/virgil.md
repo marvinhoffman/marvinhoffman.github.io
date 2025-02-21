@@ -2,7 +2,7 @@
 date = '2025-01-31T12:46:45-05:00'
 draft = false
 title = 'Virgil Stooksbury'
-author = 'Marvin LC Hoffman'
+author = 'Marvin L.C. Hoffman'
 Tags = ['Short Story','Works']
 weight = 1
 

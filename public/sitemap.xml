@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/portfolio/virgil/</loc>
+    <loc>https://example.org/works/virgil/</loc>
     <lastmod>2025-01-31T12:46:45-05:00</lastmod>
   </url><url>
-    <loc>https://example.org/portfolio/the_minds_eye/</loc>
+    <loc>https://example.org/works/the_minds_eye/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
-    <loc>https://example.org/portfolio/lonnie_stokes/</loc>
+    <loc>https://example.org/works/lonnie_stokes/</loc>
     <lastmod>2025-02-02T11:35:13-05:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/drafts/</loc>
-    <lastmod>2025-02-02T11:40:56-05:00</lastmod>
-  </url><url>
     <loc>https://example.org/</loc>
-    <lastmod>2025-02-02T11:40:56-05:00</lastmod>
+    <lastmod>2025-02-20T10:07:33-05:00</lastmod>
   </url><url>
-    <loc>https://example.org/portfolio/</loc>
+    <loc>https://example.org/posts/</loc>
+    <lastmod>2025-02-20T10:07:33-05:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/yourpost/</loc>
+    <lastmod>2025-02-20T10:07:33-05:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/drafts/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/short-story/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/</loc>
+    <lastmod>2025-02-02T11:40:56-05:00</lastmod>
+  </url><url>
+    <loc>https://example.org/works/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/works/</loc>
@@ -48,9 +54,6 @@
     <lastmod>2025-01-30T01:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/post/</loc>
-    <lastmod>2025-01-30T01:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/posts/</loc>
     <lastmod>2025-01-30T01:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/tech/</loc>

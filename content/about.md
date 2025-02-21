@@ -1,8 +1,10 @@
 +++
 date = '2025-01-30T09:54:44-05:00'
 draft = false
-menus = ['main']
-title = 'About'
+section_name = 'About'
+
+#menus = ['main']
+#title = 'About'
 
 Author = 'M. L. C. Hoffman'
 

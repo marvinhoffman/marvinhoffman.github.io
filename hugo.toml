@@ -34,3 +34,7 @@ sectionPagesMenu = 'main'
     name = 'Posts'
     pageRef = '/posts'
     weight = 40
+  [[menus.main]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 50

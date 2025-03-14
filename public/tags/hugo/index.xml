@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Marvin L.C. Hoffman</title>
-    <link>https://example.org/tags/hugo/</link>
+    <link>http://localhost:1313/tags/hugo/</link>
     <description>Recent content in Hugo on Marvin L.C. Hoffman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jan 2025 01:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Post</title>
-      <link>https://example.org/posts/example/</link>
+      <link>http://localhost:1313/posts/example/</link>
       <pubDate>Thu, 30 Jan 2025 01:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/example/</guid>
+      <guid>http://localhost:1313/posts/example/</guid>
       <description>A brief summary of the post.</description>
     </item>
   </channel>

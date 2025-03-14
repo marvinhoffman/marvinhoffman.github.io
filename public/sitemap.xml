@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/portfolio/virgil/</loc>
+    <loc>http://localhost:1313/works/virgil/</loc>
     <lastmod>2025-01-31T12:46:45-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/the_minds_eye/</loc>
+    <loc>http://localhost:1313/works/the_minds_eye/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/lonnie_stokes/</loc>
+    <loc>http://localhost:1313/works/lonnie_stokes/</loc>
     <lastmod>2025-02-02T11:35:13-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/drafts/</loc>
-    <lastmod>2025-02-02T11:40:56-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-02T11:40:56-05:00</lastmod>
+    <lastmod>2025-02-20T10:07:33-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-02-20T10:07:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yourpost/</loc>
+    <lastmod>2025-02-20T10:07:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/drafts/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/short-story/</loc>
@@ -26,10 +29,13 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/works/</loc>
+    <lastmod>2025-02-02T11:40:56-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/works/</loc>
     <lastmod>2025-02-02T11:40:56-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/workslist/</loc>
+    <loc>http://localhost:1313/works/workslist/</loc>
     <lastmod>2025-01-31T12:46:20-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
@@ -53,16 +59,10 @@
     <loc>http://localhost:1313/tags/post/</loc>
     <lastmod>2025-01-30T01:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-01-30T01:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/tech/</loc>
     <lastmod>2025-01-30T01:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/primarypost/</loc>
     <lastmod>2025-01-29T10:56:01-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/yourpost/</loc>
-    <lastmod>2025-01-29T10:07:33-05:00</lastmod>
   </url>
 </urlset>

@@ -2,6 +2,8 @@
 {{/*
   This template is the same as the default and is here to demonstrate that if you have a content directory called "works" you can create a layouts directory, just for that section.
    */}}
+   {{/* Inded if there is a matching folder, you can fiddle with the list of just that folder.
+      */}}
   <article class="pa3 pa4-ns nested-copy-line-height">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
       {{ .Content }}

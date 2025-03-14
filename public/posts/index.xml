@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Marvin L.C. Hoffman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 01:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2025 10:07:33 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yourpost</title>
+      <link>http://localhost:1313/posts/yourpost/</link>
+      <pubDate>Thu, 20 Feb 2025 10:07:33 -0500</pubDate>
+      <guid>http://localhost:1313/posts/yourpost/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
     <item>
       <title>Example Post</title>
       <link>http://localhost:1313/posts/example/</link>
@@ -21,13 +28,6 @@
       <pubDate>Wed, 29 Jan 2025 10:56:01 -0500</pubDate>
       <guid>http://localhost:1313/posts/primarypost/</guid>
       <description>&lt;p&gt;[] thing to do 1&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Yourpost</title>
-      <link>http://localhost:1313/posts/yourpost/</link>
-      <pubDate>Wed, 29 Jan 2025 10:07:33 -0500</pubDate>
-      <guid>http://localhost:1313/posts/yourpost/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
   </channel>
 </rss>

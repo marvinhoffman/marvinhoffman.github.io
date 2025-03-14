@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Works on Marvin LC Hoffman</title>
+    <title>Works on Marvin L.C. Hoffman</title>
     <link>http://localhost:1313/works/</link>
-    <description>Recent content in Works on Marvin LC Hoffman</description>
+    <description>Recent content in Works on Marvin L.C. Hoffman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2025 11:40:56 -0500</lastBuildDate>
@@ -28,6 +28,13 @@
       <pubDate>Sun, 02 Feb 2025 11:35:13 -0500</pubDate>
       <guid>http://localhost:1313/works/lonnie_stokes/</guid>
       <description>&lt;p&gt;“You ripped my scab you shithead.”&lt;/p&gt;&#xA;&lt;p&gt;Lonnie held his arm up to my face, “I ought to make you eat it Harmon.”&lt;/p&gt;&#xA;&lt;p&gt;“You did it L-Lonnie.” I said. “You di- did it trying to take my lunch box.” My voice hitching as I barely held back the tears.&lt;/p&gt;&#xA;&lt;p&gt;“Only a queer would have a Scooby-Do lunch box Harmon. And you’re a damned queer if I ever saw one.”&lt;/p&gt;&#xA;&lt;p&gt;It was an understatement that Lonnie Stokes was the bane of my existence on my bus rides home. I watched as Lonnie picked at the scab — one of three perfect little circles on his left arm. His hair stuck out every which way; especially the hair around his ears, swooping up to the skies, making his John Deere hat look like a bird about to take flight. His t-shirt had a rip under the right sleeve, and I could see a purplish bruise with yellow edges.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Workslist</title>
+      <link>http://localhost:1313/works/workslist/</link>
+      <pubDate>Fri, 31 Jan 2025 12:46:20 -0500</pubDate>
+      <guid>http://localhost:1313/works/workslist/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

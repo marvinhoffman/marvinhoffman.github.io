@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><img src="assets/sigIcon.png" alt="Marvin L. C. Hoffman"></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            position: relative;
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0); /* Fully transparent overlay */
+            z-index: 1;
+        }
+
+        main > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        #floatingBanner {
+            background-color: #a78b71; /* A color resembling sun-faded and weathered barn wood */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header Section: Contains the site title and navigation menu -->
+    <header class="bg-white shadow p-4">
+        <div class="container mx-auto flex items-center">
+            <h1 class="text-2xl font-bold mr-auto">Marvin L. C. Hoffman</h1>
+            <!-- <img id="sigIcon" src="assets/sigIcon.png" alt="Marvin L. C. Hoffman" class="h-12 w-12 mr-4"> -->
+            <nav class="ml-auto">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
+                    <li><a href="content/Portfolio/index.html" class="text-gray-700 hover:text-gray-900">Portfolio</a></li>
+                    <li><a href="content/Posts/index.html" class="text-gray-700 hover:text-gray-900">Posts</a></li>
+                    <li><a href="content/about.html" class="text-gray-700 hover:text-gray-900">About</a></li>
+                    <li><a href="content/contact.html" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Section: Contains the welcome message and main site image -->
+    <main id="heroSection" class="container mx-auto my-8 bg-gray-200 p-8 rounded-lg shadow-md h-screen" style="background-size: cover; background-position: center;">
+        <section id="floatingBanner" class="text-center bg-gray-200 p-8 rounded-lg shadow-md bg-opacity-10">
+            <h2 id="authorTag" class="text-4xl font-bold mb-4">Welcome to my author site</h2>
+            <div id="randomQuote" class="text-gray-700 italic mt-4"></div>
+        </section>
+    </main>
+    <!-- Footer Section: Contains copyright information -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; <span id="current-year"></span> Marvin L. C. Hoffman. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Dynamically set the copyright year to the current year
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+
+        // Fetch and display a random quote in the floating banner
+        document.addEventListener('DOMContentLoaded', async () => {
+            const quoteContainer = document.getElementById('randomQuote');
+            if (quoteContainer) {
+                try {
+                    const response = await fetch('assets/quotes.json');
+                    const quotes = await response.json();
+                    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+                    quoteContainer.innerHTML = `"${randomQuote.quote}" - ${randomQuote.author}`;
+                } catch (error) {
+                    console.error('Error fetching quotes:', error);
+                }
+            }
+        });
+
+        // Randomly pick a background image from the assets/images folder
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = [
+                './assets/images/BNP_Trail.jpg',
+                './assets/images/BM_Cove.png',
+                './assets/images/BM_Trail.png'
+            ];
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            const mainElement = document.querySelector('main');
+            if (mainElement) {
+                const img = new Image();
+                img.src = randomImage;
+                img.onload = () => {
+                    heroSection.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('${randomImage}')`;
+                };
+            }
+        });
+    </script>
+</body>
+</html>

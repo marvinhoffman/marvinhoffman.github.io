@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "Node16", // Updated from ESNext to Node16
+    "moduleResolution": "node16",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vite", "tailwindcss", "node"]
+  },
+  "include": ["vite.config.ts", "js/**/*"]
+}

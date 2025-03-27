@@ -1,31 +1,5 @@
-+++
-title = "Example Post"
-date = '2025-01-30T1:00:00Z'
-draft = false
-tags = ["example", "hugo", "post", "musings"]
-categories = ["Tech"]
-author = "MLC Hoffman"
-summary = "A brief summary of the post."
 
-+++
-
-#### "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-
-##### "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-
-------
-
-<iframe id="google_ads_iframe_/15184186,22440292294/5292_lipsumcom_left_siderail_1_0" name="google_ads_iframe_/15184186,22440292294/5292_lipsumcom_left_siderail_1_0" title="3rd party ad content" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" data-load-complete="true" data-google-container-id="5" style="margin: 0px; padding: 0px; border: 0px; vertical-align: bottom;"></iframe>
-
-[![freestar](https://a.pub.network/core/imgs/fslogo-green.svg)](https://ads.freestar.com/?utm_campaign=branding&utm_medium=banner&utm_source=lipsum.com&utm_content=lipsumcom_left_siderail_1)
-
-<iframe id="_fs-ad-619317f1b42c37ee" width="300" height="250" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="margin: 0px; padding: 0px;"></iframe>
-
-[![freestar](https://a.pub.network/core/imgs/fslogo-green.svg)](https://ads.freestar.com/?utm_campaign=branding&utm_medium=banner&utm_source=lipsum.com&utm_content=lipsumcom_left_siderail_2)
-
-<iframe id="_fs-ad-618ab6d9e8347b248" width="300" height="250" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="margin: 0px; padding: 0px;"></iframe>
-
-[![freestar](https://a.pub.network/core/imgs/fslogo-green.svg)](https://ads.freestar.com/?utm_campaign=branding&utm_medium=banner&utm_source=lipsum.com&utm_content=lipsumcom_right_siderail_2)
+## this is a post
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus, nisl eget facilisis tincidunt, augue urna molestie elit, quis posuere sem arcu malesuada neque. Cras ac mi molestie, congue nulla in, pretium est. Fusce vitae nibh finibus, dictum sem et, finibus arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Maecenas non erat in nisl eleifend mattis ac id arcu. Proin magna nibh, pretium quis malesuada non, vehicula non magna. Vivamus vulputate risus a sollicitudin sodales. Proin sollicitudin gravida eros at tristique. Curabitur nec justo volutpat, posuere ante nec, pretium arcu. Nam id dolor mollis, varius neque non, tincidunt ante. Nulla dapibus sapien tellus, sed elementum arcu congue eu. Morbi a magna diam. Nulla venenatis a ligula nec posuere.
 

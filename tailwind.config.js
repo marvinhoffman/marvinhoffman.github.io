@@ -8,14 +8,7 @@ module.exports = {
     'text-2xl', 'font-semibold', 'mt-2', 'list-disc', 'pl-5', 'text-center',
     'header', 'footer', 'bg-header', 'bg-footer', 'text-header', 'text-footer',
     'py-4', 'px-6', 'text-lg', 'font-medium', 'border-t', 'border-b',
-    'border-gray-300', 'dark:border-gray-600', 'text-gray-700', 'dark:text-gray-300'
+    'border-gray-300', 'dark:border-gray-600', 'text-gray-700', 'dark:text-gray-300',
+    'bg-[#4b2e2e]', // Ensure custom background color is included
   ],
-  darkMode: 'class', // Enable dark mode using the 'class' strategy
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+  darkMode: 'class', // Enable

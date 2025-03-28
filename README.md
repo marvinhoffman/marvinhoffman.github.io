@@ -73,3 +73,6 @@ This is a fully responsive and accessible static website built with HTML5, Tailw
 ## Notes
 - Replace placeholder text and images in the project with your actual content.
 - Ensure all accessibility features are tested before going live.
+
+## Updates
+- Updated the header bar color to an earthy tone and ensured text color matches the theme.

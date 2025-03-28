@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvin L. C. Hoffman</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
     <style>
         body {
@@ -35,34 +36,55 @@
         }
 
         #floatingBanner {
-            background-color: #a78b71; /* A color resembling sun-faded and weathered barn wood */
+            background-color: #c19a6b; /* Earthy tone resembling desert sand */
         }
 
         #storyBtn, #aboutBtn {
             color: #ffffff; /* Ensure text is white for contrast */
-            background-color: #d9534f; /* A brighter red for better contrast */
-            border: 2px solid #d43f3a; /* Add a border for definition */
+            background-color: #8b4513; /* SaddleBrown for a warm earthy tone */
+            border: 2px solid #a0522d; /* Add a border for definition */
         }
 
         #storyBtn:hover, #aboutBtn:hover {
-            background-color: #c9302c; /* Darker red on hover for better visibility */
-            border-color: #ac2925; /* Adjust border color on hover */
+            background-color: #6b4226; /* Darker earthy tone on hover */
+            border-color: #5a3821; /* Adjust border color on hover */
+        }
+
+        header {
+            background-color: #ffffff; /* Revert to original white background */
+            color: #000000; /* Revert to original black text */
+        }
+
+        header a {
+            color: #000000; /* Revert to original black links */
+        }
+
+        header a:hover {
+            color: #555555; /* Revert to original hover effect */
+        }
+
+        footer {
+            background-color: #4b2e2e; /* Darker earthy tone */
+            color: #ffffff; /* White text for contrast */
+        }
+
+        footer p {
+            color: #ffffff; /* Ensure footer text remains white */
         }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Header Section: Contains the site title and navigation menu -->
-    <header class="bg-white shadow p-4">
+    <header class="bg-[#4b2e2e] shadow p-4">
         <div class="container mx-auto flex items-center">
-            <h1 class="text-2xl font-bold mr-auto">Marvin L. C. Hoffman</h1>
-            <!-- <img id="sigIcon" src="assets/sigIcon.png" alt="Marvin L. C. Hoffman" class="h-12 w-12 mr-4"> -->
+            <h1 class="text-2xl font-bold mr-auto text-[#f4d1a1]">Marvin L. C. Hoffman</h1>
             <nav class="ml-auto">
                 <ul class="flex space-x-4">
-                    <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
-                    <li><a href="content/Portfolio/index.html" class="text-gray-700 hover:text-gray-900">Portfolio</a></li>
-                    <li><a href="content/Posts/index.html" class="text-gray-700 hover:text-gray-900">Posts</a></li>
-                    <li><a href="content/about.html" class="text-gray-700 hover:text-gray-900">About</a></li>
-                    <li><a href="content/contact.html" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+                    <li><a href="index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
+                    <li><a href="content/Portfolio/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
+                    <li><a href="content/Posts/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Posts</a></li>
+                    <li><a href="content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
+                    <li><a href="content/contact.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -104,12 +126,11 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-[#4b2e2e] text-white py-6">
         <div class="container mx-auto text-center">
             <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
             <p class="text-sm">Designed with care and creativity.</p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

@@ -20,3 +20,32 @@ main img {
     text-align: center; /* Center-align the content */
     margin-bottom: 2rem; /* Add spacing below the section */
 }
+
+.bg-white {
+    background-color: #ffffff; /* Revert to original white background */
+}
+
+footer {
+    background-color: #4b2e2e; /* Darker earthy tone */
+    color: #ffffff; /* White text for contrast */
+}
+
+footer p {
+    color: #ffffff; /* Ensure footer text remains white */
+}
+
+header {
+    background-color: #4b2e2e !important; /* Darker earthy tone */
+}
+
+header h1 {
+    color: #f4d1a1 !important; /* Sandy contrasting text color */
+}
+
+header a {
+    color: #f4d1a1 !important; /* Sandy contrasting link color */
+}
+
+header a:hover {
+    color: #d9b48f !important; /* Slightly darker sandy tone for hover */
+}

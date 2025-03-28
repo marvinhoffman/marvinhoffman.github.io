@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script defer src="../../../js/script.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Marvin L. C. Hoffman</h1>
-            <nav>
+    <!-- Header Section: Contains the site title and navigation menu -->
+    <header class="bg-[#4b2e2e] shadow p-4">
+        <div class="container mx-auto flex items-center">
+            <h1 class="text-2xl font-bold mr-auto text-[#f4d1a1]">Marvin L. C. Hoffman</h1>
+            <nav class="ml-auto">
+                <!-- Nav link order: Home | Portfolio | Posts | About | Contact -->
                 <ul class="flex space-x-4">
-                    <li><a href="../../index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
-                    <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Portfolio</a></li>
-                    <li><a href="../Posts/index.html" class="text-gray-700 hover:text-gray-900">Posts</a></li>
-                    <li><a href="../about.html" class="text-gray-700 hover:text-gray-900">About</a></li>
-                    <li><a href="../contact.html" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+                    <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
+                    <!-- <li><a href="../../content/Portfolio/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
+                    <li><a href="../../content/Posts/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Posts</a></li> -->
+                    <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
+                    <!-- <li><a href="../../content/contact.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Contact</a></li> -->
                 </ul>
             </nav>
-            <button id="darkModeToggle" class="hidden">Toggle Dark Mode</button>
         </div>
     </header>
     <main class="container mx-auto my-8">
@@ -68,9 +70,12 @@
             </div>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white py-4">
+
+    <!-- Footer Section -->
+    <footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
         <div class="container mx-auto text-center">
-            <p>&copy; 2025 Marvin L. C. Hoffman. All rights
+            <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
+            <p class="text-sm">Designed with care and creativity.</p>
         </div>
     </footer>
 </body>

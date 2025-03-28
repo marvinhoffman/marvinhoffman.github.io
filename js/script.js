@@ -22,6 +22,11 @@ fetch('assets/quotes.json')
         console.error('Error fetching quotes:', error);
     });
 
+// Method to popup an alert message
+function showAlert(message) {
+    alert(message);
+}
+
 // Commenting out the background code
 /*
 document.addEventListener('DOMContentLoaded', () => {

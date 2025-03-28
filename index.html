@@ -8,69 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            flex: 1;
-            position: relative;
-        }
-
-        main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0); /* Fully transparent overlay */
-            z-index: 1;
-        }
-
-        main > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        #floatingBanner {
-            background-color: #c19a6b; /* Earthy tone resembling desert sand */
-        }
-
-        #storyBtn, #aboutBtn {
-            color: #ffffff; /* Ensure text is white for contrast */
-            background-color: #8b4513; /* SaddleBrown for a warm earthy tone */
-            border: 2px solid #a0522d; /* Add a border for definition */
-        }
-
-        #storyBtn:hover, #aboutBtn:hover {
-            background-color: #6b4226; /* Darker earthy tone on hover */
-            border-color: #5a3821; /* Adjust border color on hover */
-        }
-
-        header {
-            background-color: #4b2e2e; /* Earthy tone */
-            color: #f4d1a1; /* Light earthy tone for text */
-        }
-
-        header a {
-            color: #000000; /* Revert to original black links */
-        }
-
-        header a:hover {
-            color: #555555; /* Revert to original hover effect */
-        }
-
-        footer {
-            background-color: #4b2e2e; /* Darker earthy tone */
-            color: #ffffff; /* White text for contrast */
-        }
-
-        footer p {
-            color: #ffffff; /* Ensure footer text remains white */
-        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -99,7 +36,7 @@
     <div id="mainBodyCtr" class="max-w-5xl mx-auto px-6 py-16 flex flex-col gap-12">
         <!-- Author Intro Section -->
         <div id="authorIntro" class="w-full text-center mb-6">
-            <h1 class="text-5xl font-bold mb-4">Marvin L. C.  Hoffman</h1>
+            <h1 class="text-5xl font-bold mb-4">Marvin L. C. Hoffman</h1>
             <h2 class="text-xl font-semibold text-gray-700 tracking-wide uppercase">Author of Gripping Southern Crime Thrillers</h2>
         </div>
 

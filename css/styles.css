@@ -101,3 +101,68 @@ header a {
 header a:hover {
     color: #d9b48f !important; /* Slightly darker sandy tone for hover */
 }
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    position: relative;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent overlay */
+    z-index: 1;
+}
+
+main > * {
+    position: relative;
+    z-index: 2;
+}
+
+#floatingBanner {
+    background-color: #c19a6b; /* Earthy tone resembling desert sand */
+}
+
+#storyBtn, #aboutBtn {
+    color: #ffffff; /* Ensure text is white for contrast */
+    background-color: #8b4513; /* SaddleBrown for a warm earthy tone */
+    border: 2px solid #a0522d; /* Add a border for definition */
+}
+
+#storyBtn:hover, #aboutBtn:hover {
+    background-color: #6b4226; /* Darker earthy tone on hover */
+    border-color: #5a3821; /* Adjust border color on hover */
+}
+
+header {
+    background-color: #4b2e2e; /* Earthy tone */
+    color: #f4d1a1; /* Light earthy tone for text */
+}
+
+header a {
+    color: #f4d1a1; /* Sandy contrasting link color */
+}
+
+header a:hover {
+    color: #d9b48f; /* Slightly darker sandy tone for hover */
+}
+
+footer {
+    background-color: #4b2e2e; /* Darker earthy tone */
+    color: #ffffff; /* White text for contrast */
+}
+
+footer p {
+    color: #ffffff; /* Ensure footer text remains white */
+}

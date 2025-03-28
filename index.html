@@ -37,6 +37,17 @@
         #floatingBanner {
             background-color: #a78b71; /* A color resembling sun-faded and weathered barn wood */
         }
+
+        #storyBtn, #aboutBtn {
+            color: #ffffff; /* Ensure text is white for contrast */
+            background-color: #d9534f; /* A brighter red for better contrast */
+            border: 2px solid #d43f3a; /* Add a border for definition */
+        }
+
+        #storyBtn:hover, #aboutBtn:hover {
+            background-color: #c9302c; /* Darker red on hover for better visibility */
+            border-color: #ac2925; /* Adjust border color on hover */
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -63,27 +74,32 @@
     </div>
 
     <!-- Center Section -->
-    <div class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12">
-        <!-- Text Section -->
-        <div class="flex-1">
+    <div id="mainBodyCtr" class="max-w-5xl mx-auto px-6 py-16 flex flex-col gap-12">
+        <!-- Author Intro Section -->
+        <div id="authorIntro" class="w-full text-center mb-6">
             <h1 class="text-5xl font-bold mb-4">Marvin L. C.  Hoffman</h1>
-            <h2 class="text-xl font-semibold text-gray-700 mb-6 tracking-wide uppercase">Author of Gripping Southern Crime Thrillers</h2>
-
-            <p class="text-lg leading-relaxed mb-6">
-                I'm Marvin Hoffman, a novelist blending southern grit with mystery and moral complexity.
-                After a tech career and Navy service, I now channel life experience into writing stories filled
-                with drama, danger, and depth.
-            </p>
-
-            <div class="flex gap-4">
-                <a href="/stories" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Read a Story</a>
-                <a href="/about" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Learn More About Me</a>
-            </div>
+            <h2 class="text-xl font-semibold text-gray-700 tracking-wide uppercase">Author of Gripping Southern Crime Thrillers</h2>
         </div>
 
-        <!-- Image Section -->
-        <div class="flex-1">
-            <img src="assets/images/bio/me_pub.jpeg" alt="Portrait of Marvin Hoffman" class="rounded-2xl shadow-lg max-w-full h-auto">
+        <!-- Content and Image Section -->
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Content Section -->
+            <div class="flex-1 flex flex-col gap-6">
+                <p class="text-lg leading-relaxed">
+                    I'm Marvin Hoffman, a novelist blending southern grit with mystery and moral complexity.
+                    After a tech career and Navy service, I now channel life experience into writing stories filled
+                    with drama, danger, and depth.
+                </p>
+                <div class="flex gap-4">
+                    <a id="storyBtn" href="/stories" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Read a Story</a>
+                    <a id="aboutBtn" href="content/about.html" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Learn More About Me</a>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="flex-1">
+                <img src="assets/images/bio/me_pub.jpeg" alt="Portrait of Marvin Hoffman" class="rounded-2xl shadow-lg max-w-full h-auto">
+            </div>
         </div>
     </div>
 

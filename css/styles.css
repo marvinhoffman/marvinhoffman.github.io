@@ -9,3 +9,14 @@ main img {
 }
 
 /* Custom styles can be added here if needed */
+#mainBodyCtr .authorIntro {
+    width: 100%; /* Make the authorIntro section span the full width */
+    text-align: center; /* Center-align the text for better presentation */
+    margin-bottom: 2rem; /* Add spacing below the section */
+}
+
+#authorIntro {
+    width: 100%; /* Make the section span the full width */
+    text-align: center; /* Center-align the content */
+    margin-bottom: 2rem; /* Add spacing below the section */
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvin L. C. Hoffman</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <style>
         body {
             display: flex;
@@ -55,60 +56,44 @@
             </nav>
         </div>
     </header>
-    <!-- Main Section: Contains the welcome message and main site image -->
-    <main id="heroSection" class="container mx-auto my-8 bg-gray-200 p-8 rounded-lg shadow-md h-screen" style="background-size: cover; background-position: center;">
-        <section id="floatingBanner" class="text-center bg-gray-200 p-8 rounded-lg shadow-md bg-opacity-10">
-            <h2 id="authorTag" class="text-4xl font-bold mb-4">Welcome to my author site</h2>
-            <div id="randomQuote" class="text-gray-700 italic mt-4"></div>
-        </section>
-    </main>
-    <!-- Footer Section: Contains copyright information -->
-    <footer class="bg-gray-800 text-white py-4">
+
+    <!-- Random Quote Bar -->
+    <div class="bg-white border-t border-gray-300 py-4 text-center">
+        <div id="randomQuote" class="text-gray-700 italic"></div>
+    </div>
+
+    <!-- Center Section -->
+    <div class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12">
+        <!-- Text Section -->
+        <div class="flex-1">
+            <h1 class="text-5xl font-bold mb-4">Marvin L. C.  Hoffman</h1>
+            <h2 class="text-xl font-semibold text-gray-700 mb-6 tracking-wide uppercase">Author of Gripping Southern Crime Thrillers</h2>
+
+            <p class="text-lg leading-relaxed mb-6">
+                I'm Marvin Hoffman, a novelist blending southern grit with mystery and moral complexity.
+                After a tech career and Navy service, I now channel life experience into writing stories filled
+                with drama, danger, and depth.
+            </p>
+
+            <div class="flex gap-4">
+                <a href="/stories" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Read a Story</a>
+                <a href="/about" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Learn More About Me</a>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="flex-1">
+            <img src="assets/images/bio/me_pub.jpeg" alt="Portrait of Marvin Hoffman" class="rounded-2xl shadow-lg max-w-full h-auto">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
-            <p>&copy; <span id="current-year"></span> Marvin L. C. Hoffman. All rights reserved.</p>
+            <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
+            <p class="text-sm">Designed with care and creativity.</p>
         </div>
     </footer>
-    <script>
-        // Dynamically set the copyright year to the current year
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearSpan = document.getElementById('current-year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-        });
-
-        // Fetch and display a random quote in the floating banner
-        document.addEventListener('DOMContentLoaded', async () => {
-            const quoteContainer = document.getElementById('randomQuote');
-            if (quoteContainer) {
-                try {
-                    const response = await fetch('assets/quotes.json');
-                    const quotes = await response.json();
-                    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-                    quoteContainer.innerHTML = `"${randomQuote.quote}" - ${randomQuote.author}`;
-                } catch (error) {
-                    console.error('Error fetching quotes:', error);
-                }
-            }
-        });
-
-        // Randomly pick a background image from the assets/images folder
-        document.addEventListener('DOMContentLoaded', () => {
-            const images = [
-                './assets/images/BNP_Trail.jpg',
-                './assets/images/BM_Cove.png',
-                './assets/images/BM_Trail.png'
-            ];
-            const randomImage = images[Math.floor(Math.random() * images.length)];
-            const mainElement = document.querySelector('main');
-            if (mainElement) {
-                const img = new Image();
-                img.src = randomImage;
-                img.onload = () => {
-                    heroSection.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('${randomImage}')`;
-                };
-            }
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

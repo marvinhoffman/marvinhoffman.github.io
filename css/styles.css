@@ -6,107 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-main {
-    flex: 1;
-    position: relative;
-}
-
-main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0); /* Fully transparent overlay */
-    z-index: 1;
-}
-
-main > * {
-    position: relative;
-    z-index: 2;
-}
-
-#floatingBanner {
-    background-color: #c19a6b; /* Earthy tone resembling desert sand */
-}
-
-#storyBtn, #aboutBtn {
-    color: #ffffff; /* Ensure text is white for contrast */
-    background-color: #8b4513; /* SaddleBrown for a warm earthy tone */
-    border: 2px solid #a0522d; /* Add a border for definition */
-}
-
-#storyBtn:hover, #aboutBtn:hover {
-    background-color: #6b4226; /* Darker earthy tone on hover */
-    border-color: #5a3821; /* Adjust border color on hover */
-}
-
-header {
-    background-color: #ffffff; /* Revert to original white background */
-    color: #000000; /* Revert to original black text */
-}
-
-header a {
-    color: #000000; /* Revert to original black links */
-}
-
-header a:hover {
-    color: #555555; /* Revert to original hover effect */
-}
-
-footer {
-    background-color: #4b2e2e; /* Darker earthy tone */
-    color: #ffffff; /* White text for contrast */
-}
-
-footer p {
-    color: #ffffff; /* Ensure footer text remains white */
-}
-
-/* Adjust the main site image to fill the main section */
-main img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Custom styles can be added here if needed */
-#mainBodyCtr .authorIntro {
-    width: 100%; /* Make the authorIntro section span the full width */
-    text-align: center; /* Center-align the text for better presentation */
-    margin-bottom: 2rem; /* Add spacing below the section */
-}
-
-#authorIntro {
-    width: 100%; /* Make the section span the full width */
-    text-align: center; /* Center-align the content */
-    margin-bottom: 2rem; /* Add spacing below the section */
-}
-
-.bg-white {
-    background-color: #ffffff; /* Revert to original white background */
-}
-
-header h1 {
-    color: #f4d1a1 !important; /* Sandy contrasting text color */
-}
-
-header a {
-    color: #f4d1a1 !important; /* Sandy contrasting link color */
-}
-
-header a:hover {
-    color: #d9b48f !important; /* Slightly darker sandy tone for hover */
-}
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f4d1a1; /* Light sand background color for the entire page */
 }
 
 main {
@@ -160,9 +60,45 @@ header a:hover {
 
 footer {
     background-color: #4b2e2e; /* Darker earthy tone */
-    color: #ffffff; /* White text for contrast */
+    color: #f4d1a1; /* Match footer text color with header text color */
 }
 
 footer p {
-    color: #ffffff; /* Ensure footer text remains white */
+    color: #f4d1a1; /* Match footer paragraph text color with header text color */
+}
+
+/* Adjust the main site image to fill the main section */
+main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Custom styles can be added here if needed */
+#mainBodyCtr .authorIntro {
+    width: 100%; /* Make the authorIntro section span the full width */
+    text-align: center; /* Center-align the text for better presentation */
+    margin-bottom: 2rem; /* Add spacing below the section */
+}
+
+#authorIntro {
+    width: 100%; /* Make the section span the full width */
+    text-align: center; /* Center-align the content */
+    margin-bottom: 2rem; /* Add spacing below the section */
+}
+
+.bg-white {
+    background-color: #ffffff; /* Revert to original white background */
+}
+
+header h1 {
+    color: #f4d1a1 !important; /* Sandy contrasting text color */
+}
+
+header a {
+    color: #f4d1a1 !important; /* Sandy contrasting link color */
+}
+
+header a:hover {
+    color: #d9b48f !important; /* Slightly darker sandy tone for hover */
 }

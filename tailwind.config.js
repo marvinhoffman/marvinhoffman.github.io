@@ -10,5 +10,14 @@ module.exports = {
     'py-4', 'px-6', 'text-lg', 'font-medium', 'border-t', 'border-b',
     'border-gray-300', 'dark:border-gray-600', 'text-gray-700', 'dark:text-gray-300',
     'bg-[#4b2e2e]', // Ensure custom background color is included
+    'bg-[#f4d1a1]', // Light sandy background color for the center section
   ],
   darkMode: 'class', // Enable
+  theme: {
+    extend: {
+      colors: {
+        sandy: '#f4d1a1', // Light sandy color
+      },
+    },
+  },
+};

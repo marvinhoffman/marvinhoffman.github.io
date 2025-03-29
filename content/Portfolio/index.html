@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <script defer src="portfolio.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -22,45 +22,26 @@
     </div>
   </header>
 
-  <main class="container mx-auto my-8">
+  <main class="container mx-auto my-8 px-4">
     <section class="text-center">
       <h2 class="text-4xl font-semibold mb-4">Portfolio</h2>
       <p class="text-lg text-gray-600 mb-6">Browse short stories and creative works below.</p>
 
-      <div class="mb-6">
-        <label for="genreFilter" class="mr-2 font-semibold">Filter by Genre:</label>
-        <select id="genreFilter" class="border border-gray-300 rounded px-3 py-1">
-          <option value="all">All</option>
-          <option value="crime">Crime</option>
-          <option value="speculative">Speculative</option>
-          <option value="horror">Horror</option>
-          <option value="drama">Drama</option>
-        </select>
+      <div id="tagFilterGroup" class="flex flex-wrap justify-center gap-2 mb-6">
+        <!-- Tag buttons will be generated here -->
+      </div>
+
+      <div class="text-center mb-6">
+        <button id="clearTags" class="text-sm text-[#9c3b1b] underline">Clear Selected Tags</button>
       </div>
     </section>
 
     <section class="hero bg-gray-100 py-6">
-      <div id="cardsContainer" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div id="cardsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Cards will be inserted by JS -->
-      </div>
-
-      <div class="flex justify-center items-center gap-4 mt-8">
-        <button id="prevPage" class="bg-[#9c3b1b] text-white px-4 py-2 rounded disabled:opacity-50">Previous</button>
-        <span id="pageIndicator" class="font-medium text-gray-700"></span>
-        <button id="nextPage" class="bg-[#9c3b1b] text-white px-4 py-2 rounded disabled:opacity-50">Next</button>
       </div>
     </section>
   </main>
-
-  <!-- Modal -->
-  <div id="modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
-    <div class="bg-white w-11/12 max-w-3xl max-h-[80vh] overflow-y-auto rounded-lg shadow-lg p-6 relative">
-      <button id="closeModal" class="absolute top-4 right-4 text-xl font-bold text-gray-600 hover:text-black">&times;</button>
-      <div id="modalContent" class="prose max-w-none">
-        <!-- Story content will be loaded here -->
-      </div>
-    </div>
-  </div>
 
   <footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
     <div class="container mx-auto text-center">

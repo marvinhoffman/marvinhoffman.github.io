@@ -1,100 +1,108 @@
-const cardsContainer = document.getElementById("cardsContainer");
-const genreFilter = document.getElementById("genreFilter");
-const prevPage = document.getElementById("prevPage");
-const nextPage = document.getElementById("nextPage");
-const pageIndicator = document.getElementById("pageIndicator");
-const modal = document.getElementById("modal");
-const modalContent = document.getElementById("modalContent");
-const closeModal = document.getElementById("closeModal");
-
 let stories = [];
-let filteredStories = [];
-let currentPage = 1;
-const itemsPerPage = 6;
+let selectedTags = [];
 
 async function loadStories() {
   try {
-    const res = await fetch("stories.json");
-    stories = await res.json();
-    filteredStories = [...stories];
-    render();
-  } catch (err) {
-    console.error("Failed to load stories:", err);
+    const response = await fetch('stories.json');
+    stories = await response.json();
+    renderTagButtons();
+    filterAndRenderStories();
+  } catch (error) {
+    console.error("Failed to load stories:", error);
   }
 }
 
-function render() {
-  cardsContainer.innerHTML = "";
-
-  const start = (currentPage - 1) * itemsPerPage;
-  const end = start + itemsPerPage;
-  const paginatedStories = filteredStories.slice(start, end);
-
-  paginatedStories.forEach((story) => {
-    const card = document.createElement("div");
-    card.className = "card bg-white shadow-md rounded-lg p-6 cursor-pointer hover:bg-gray-50";
-    card.innerHTML = `
-      <h2 class="text-2xl font-bold mb-2">${story.title}</h2>
-      <p class="text-gray-600 mb-4">${story.summary}</p>
-      <span class="text-[#9c3b1b] font-semibold hover:underline">Read Story →</span>
-    `;
-    card.addEventListener("click", () => {
-        window.location.href = `reader.html?story=${story.link}`;
-      });
-    cardsContainer.appendChild(card);
+function renderTagButtons() {
+  const tagSet = new Set();
+  stories.forEach(story => {
+    if (Array.isArray(story.tags)) {
+      story.tags.forEach(tag => tagSet.add(tag));
+    }
   });
 
-  const totalPages = Math.ceil(filteredStories.length / itemsPerPage);
-  pageIndicator.textContent = `Page ${currentPage} of ${totalPages}`;
-  prevPage.disabled = currentPage === 1;
-  nextPage.disabled = currentPage === totalPages;
-}
+  const tagFilterGroup = document.getElementById("tagFilterGroup");
+  tagFilterGroup.innerHTML = "";
 
-function filterByGenre(genre) {
-  currentPage = 1;
-  filteredStories = genre === "all" ? [...stories] : stories.filter(s => s.genre === genre);
-  render();
-}
+  tagSet.forEach(tag => {
+    const button = document.createElement("button");
+    button.textContent = tag;
+    button.className = "tag-btn bg-gray-300 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-[#f4d1a1] hover:text-[#4b2e2e]";
+    button.dataset.tag = tag;
 
-genreFilter.addEventListener("change", (e) => filterByGenre(e.target.value));
-prevPage.addEventListener("click", () => {
-  if (currentPage > 1) {
-    currentPage--;
-    render();
-  }
-});
-nextPage.addEventListener("click", () => {
-  const totalPages = Math.ceil(filteredStories.length / itemsPerPage);
-  if (currentPage < totalPages) {
-    currentPage++;
-    render();
-  }
-});
-
-function openModal(storyPath) {
-  fetch(storyPath)
-    .then(res => res.text())
-    .then(html => {
-      modalContent.innerHTML = html;
-      modal.classList.remove("hidden");
-    })
-    .catch(err => {
-      modalContent.innerHTML = `<p class='text-red-500'>Failed to load story.</p>`;
-      modal.classList.remove("hidden");
-      console.error("Error loading story:", err);
+    button.addEventListener("click", () => {
+      toggleTag(tag, button);
     });
+
+    tagFilterGroup.appendChild(button);
+  });
 }
 
-closeModal.addEventListener("click", () => {
-  modal.classList.add("hidden");
-  modalContent.innerHTML = "";
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    modal.classList.add("hidden");
-    modalContent.innerHTML = "";
+function toggleTag(tag, button) {
+  const index = selectedTags.indexOf(tag);
+  if (index > -1) {
+    selectedTags.splice(index, 1);
+    button.classList.remove("bg-[#f4d1a1]", "text-[#4b2e2e]");
+    button.classList.add("bg-gray-300", "text-gray-700");
+  } else {
+    selectedTags.push(tag);
+    button.classList.remove("bg-gray-300", "text-gray-700");
+    button.classList.add("bg-[#f4d1a1]", "text-[#4b2e2e]");
   }
+
+  filterAndRenderStories();
+}
+
+function filterAndRenderStories() {
+  const filtered = stories.filter(story => {
+    if (selectedTags.length === 0) return true;
+    return selectedTags.every(tag => story.tags?.includes(tag));
+  });
+
+  renderStoryCards(filtered);
+}
+
+function renderStoryCards(filteredStories) {
+  const container = document.getElementById("cardsContainer");
+  container.innerHTML = "";
+
+  filteredStories.forEach(story => {
+    const card = document.createElement("div");
+    card.className = "bg-white rounded-lg shadow-md p-4 flex flex-col";
+
+    const title = document.createElement("h3");
+    title.className = "text-xl font-bold mb-2";
+    title.textContent = story.title;
+
+    const summary = document.createElement("p");
+    summary.className = "text-gray-700 mb-2";
+    summary.textContent = story.summary;
+
+    const tagContainer = document.createElement("div");
+    tagContainer.className = "flex flex-wrap gap-1 mb-2";
+    (story.tags || []).forEach(tag => {
+      const tagEl = document.createElement("span");
+      tagEl.className = "inline-block bg-[#f4d1a1] text-[#4b2e2e] text-xs font-semibold px-2 py-1 rounded-full";
+      tagEl.textContent = tag;
+      tagContainer.appendChild(tagEl);
+    });
+
+    const link = document.createElement("a");
+    link.href = story.link;
+    link.className = "mt-auto text-[#9c3b1b] font-semibold hover:underline";
+    link.textContent = "Read more →";
+
+    card.appendChild(title);
+    card.appendChild(summary);
+    card.appendChild(tagContainer);
+    card.appendChild(link);
+    container.appendChild(card);
+  });
+}
+
+document.getElementById("clearTags").addEventListener("click", () => {
+  selectedTags = [];
+  renderTagButtons();
+  filterAndRenderStories();
 });
 
 loadStories();

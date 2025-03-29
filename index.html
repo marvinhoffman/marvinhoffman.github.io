@@ -18,10 +18,7 @@
             <nav class="ml-auto">
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
-                    <!-- <li><a href="content/Portfolio/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
-                    <li><a href="content/Posts/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Posts</a></li> -->
                     <li><a href="content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
-                    <!-- <li><a href="content/contact.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Contact</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -41,23 +38,23 @@
         </div>
 
         <!-- Content and Image Section -->
-        <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:flex md:gap-12 items-start">
+            <!-- Image Section -->
+            <div class="md:w-1/3 mb-8 md:mb-0">
+                <img src="assets/images/bio/me_pub.jpeg" alt="Portrait of Marvin Hoffman" class="rounded-2xl shadow-lg w-full h-auto">
+            </div>
+
             <!-- Content Section -->
-            <div class="flex-1 flex flex-col gap-6">
-                <p class="text-lg leading-relaxed">
+            <div class="md:w-2/3">
+                <p class="text-lg leading-relaxed mb-6">
                     I'm Marvin Hoffman, a novelist blending southern grit with mystery and moral complexity.
                     After a tech career and Navy service, I now channel life experience into writing stories filled
                     with drama, danger, and depth.
                 </p>
-                <div class="flex gap-4">
+                <div class="flex flex-wrap gap-4">
                     <a id="storyBtn" href="#" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition" onclick="showAlert('Under Construction')">Read a Story</a>
                     <a id="aboutBtn" href="content/about.html" class="bg-[#9c3b1b] text-white px-5 py-3 rounded-lg shadow hover:bg-[#7d2f16] transition">Learn More About Me</a>
                 </div>
-            </div>
-
-            <!-- Image Section -->
-            <div class="flex-1">
-                <img src="assets/images/bio/me_pub.jpeg" alt="Portrait of Marvin Hoffman" class="rounded-2xl shadow-lg max-w-full h-auto">
             </div>
         </div>
     </div>

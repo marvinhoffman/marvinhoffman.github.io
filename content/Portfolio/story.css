@@ -1,0 +1,24 @@
+
+  .prose-neutral-fix :is(h1, h2, h3, h4, h5, h6, p, strong, em, a) {
+    color: #f7f8fa !important; /* Tailwind gray-800 */
+  }
+
+  .prose-neutral-fix a {
+    text-decoration: underline;
+  }
+
+  .prose-neutral-fix p {
+    color: #4b5563 !important; /* Tailwind gray-600 */
+  }
+
+  .prose header {
+    background-color: transparent !important;
+  }
+
+  .prose header h1 {
+    color: #020311 !important; /* Tailwind gray-700 */
+  }
+  
+  .prose header p {
+    color: #6a6b7a !important; /* Tailwind gray-500 */
+  }

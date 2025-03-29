@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Lonnie Stokes",
+      "summary": "A Southern man on the edge confronts the weight of justice, memory, and small-town secrets.",
+      "link": "lonnie_stokes.html",
+      "genre": "crime"
+    },
+    {
+      "title": "The Mind's Eye",
+      "summary": "A speculative journey into perception, fear, and the edges of human consciousness.",
+      "link": "the_minds_eye.html",
+      "genre": "speculative"
+    },
+    {
+      "title": "Virgil",
+      "summary": "A quiet caretaker uncovers a haunting truth in the hills of Appalachia, where legends walk the line of reality.",
+      "link": "virgil.html",
+      "genre": "horror"
+    }
+  ]
+  

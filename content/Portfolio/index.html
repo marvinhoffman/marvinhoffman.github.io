@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script defer src="../../../js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script defer src="portfolio.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <!-- Header Section: Contains the site title and navigation menu -->
-    <header class="bg-[#4b2e2e] shadow p-4">
-        <div class="container mx-auto flex items-center">
-            <h1 class="text-2xl font-bold mr-auto text-[#f4d1a1]">Marvin L. C. Hoffman</h1>
-            <nav class="ml-auto">
-                <!-- Nav link order: Home | Portfolio | Posts | About | Contact -->
-                <ul class="flex space-x-4">
-                    <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
-                    <!-- <li><a href="../../content/Portfolio/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
-                    <li><a href="../../content/Posts/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Posts</a></li> -->
-                    <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
-                    <!-- <li><a href="../../content/contact.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Contact</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="container mx-auto my-8">
-        <section class="text-center">
-            <h2 class="text-4xl font-semibold mb-4">Portfolio</h2>
-            <p class="text-lg text-gray-600">A list of all portfolio items will go here.</p>
-        </section>
-        <section class="hero bg-gray-100 py-12">
-            <div class="container mx-auto text-center mb-8">
-                <!-- <h1 class="text-4xl font-bold mb-4">Portfolio</h1>
-                <p class="text-gray-700">Explore my work and projects below.</p> -->
-            </div>
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="card bg-white shadow-md rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-2">Project Title 1</h2>
-                    <p class="text-gray-600">Brief description of the project goes here.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="card bg-white shadow-md rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-2">Project Title 2</h2>
-                    <p class="text-gray-600">Brief description of the project goes here.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="card bg-white shadow-md rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-2">Project Title 3</h2>
-                    <p class="text-gray-600">Brief description of the project goes here.</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="card bg-white shadow-md rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-2">Project Title 4</h2>
-                    <p class="text-gray-600">Brief description of the project goes here.</p>
-                </div>
-                <!-- Card 5 -->
-                <div class="card bg-white shadow-md rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-2">Project Title 5</h2>
-                    <p class="text-gray-600">Brief description of the project goes here.</p>
-                </div>
-                <!-- Card 6 -->
-                <div class="card bg-white shadow-md rounded-lg p-6">
-                    <h2 class="text-2xl font-bold mb-2">Project Title 6</h2>
-                    <p class="text-gray-600">Brief description of the project goes here.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <header class="bg-[#4b2e2e] shadow p-4">
+    <div class="container mx-auto flex items-center">
+      <h1 class="text-2xl font-bold mr-auto text-[#f4d1a1]">Marvin L. C. Hoffman</h1>
+      <nav class="ml-auto">
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
+          <li><a href="../../content/Portfolio/index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
+          <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Footer Section -->
-    <footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
-        <div class="container mx-auto text-center">
-            <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
-            <p class="text-sm">Designed with care and creativity.</p>
-        </div>
-    </footer>
+  <main class="container mx-auto my-8">
+    <section class="text-center">
+      <h2 class="text-4xl font-semibold mb-4">Portfolio</h2>
+      <p class="text-lg text-gray-600 mb-6">Browse short stories and creative works below.</p>
+
+      <div class="mb-6">
+        <label for="genreFilter" class="mr-2 font-semibold">Filter by Genre:</label>
+        <select id="genreFilter" class="border border-gray-300 rounded px-3 py-1">
+          <option value="all">All</option>
+          <option value="crime">Crime</option>
+          <option value="speculative">Speculative</option>
+          <option value="horror">Horror</option>
+          <option value="drama">Drama</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="hero bg-gray-100 py-6">
+      <div id="cardsContainer" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards will be inserted by JS -->
+      </div>
+
+      <div class="flex justify-center items-center gap-4 mt-8">
+        <button id="prevPage" class="bg-[#9c3b1b] text-white px-4 py-2 rounded disabled:opacity-50">Previous</button>
+        <span id="pageIndicator" class="font-medium text-gray-700"></span>
+        <button id="nextPage" class="bg-[#9c3b1b] text-white px-4 py-2 rounded disabled:opacity-50">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+    <div class="bg-white w-11/12 max-w-3xl max-h-[80vh] overflow-y-auto rounded-lg shadow-lg p-6 relative">
+      <button id="closeModal" class="absolute top-4 right-4 text-xl font-bold text-gray-600 hover:text-black">&times;</button>
+      <div id="modalContent" class="prose max-w-none">
+        <!-- Story content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
+      <p class="text-sm">Designed with care and creativity.</p>
+    </div>
+  </footer>
 </body>
 </html>

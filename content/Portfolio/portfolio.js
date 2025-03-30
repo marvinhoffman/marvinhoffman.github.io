@@ -67,7 +67,7 @@ function renderStoryCards(filteredStories) {
 
   filteredStories.forEach(story => {
     const card = document.createElement("div");
-    card.className = "bg-white rounded-lg shadow-md p-4 flex flex-col";
+    card.className = "bg-white rounded-lg shadow-md p-4 flex flex-col cursor-pointer hover:shadow-lg transition";
 
     const title = document.createElement("h3");
     title.className = "text-xl font-bold mb-2";
@@ -86,18 +86,26 @@ function renderStoryCards(filteredStories) {
       tagContainer.appendChild(tagEl);
     });
 
-    const link = document.createElement("a");
-    link.href = story.link;
-    link.className = "mt-auto text-[#9c3b1b] font-semibold hover:underline";
-    link.textContent = "Read more →";
-
     card.appendChild(title);
     card.appendChild(summary);
     card.appendChild(tagContainer);
-    card.appendChild(link);
+
+    card.addEventListener("click", () => openStoryViewer(story.link));
     container.appendChild(card);
   });
 }
+
+function openStoryViewer(link) {
+  document.getElementById("storyFrame").src = link;
+  document.getElementById("storyViewer").classList.remove("hidden");
+  document.querySelector("main").classList.add("hidden");
+}
+
+document.getElementById("closeViewer").addEventListener("click", () => {
+  document.getElementById("storyViewer").classList.add("hidden");
+  document.querySelector("main").classList.remove("hidden");
+  document.getElementById("storyFrame").src = "";
+});
 
 document.getElementById("clearTags").addEventListener("click", () => {
   selectedTags = [];

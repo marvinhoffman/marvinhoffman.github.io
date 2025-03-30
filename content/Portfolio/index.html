@@ -11,28 +11,25 @@
 <body class="bg-gray-100 text-gray-900">
   <header class="bg-[#4b2e2e] shadow p-4">
     <div class="container mx-auto flex items-center">
-        <a href="index.html" class="mr-auto">
-            <img src="../../assets/sig_icon_sand.png" alt="Marvin L. C. Hoffman" class="h-10 sm:h-12 object-contain" />
-          </a>
-          
-        <nav class="ml-auto">
-            <ul class="flex space-x-4">
-                <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
-                <li><a href="../../content/Portfolio/" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
-                <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
-            </ul>
-        </nav>
+      <a href="index.html" class="mr-auto">
+        <img src="../../assets/sig_icon_sand.png" alt="Marvin L. C. Hoffman" class="h-10 sm:h-12 object-contain" />
+      </a>
+      <nav class="ml-auto">
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
+          <li><a href="../../content/Portfolio/" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
+          <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
   <main class="container mx-auto my-8 px-4">
     <section class="text-center">
       <h2 class="text-4xl font-semibold mb-4">Portfolio</h2>
       <p class="text-lg text-gray-600 mb-6">Browse short stories and creative works below.</p>
 
-      <div id="tagFilterGroup" class="flex flex-wrap justify-center gap-2 mb-6">
-        <!-- Tag buttons will be generated here -->
-      </div>
+      <div id="tagFilterGroup" class="flex flex-wrap justify-center gap-2 mb-6"></div>
 
       <div class="text-center mb-6">
         <button id="clearTags" class="text-sm text-[#9c3b1b] underline">Clear Selected Tags</button>
@@ -46,17 +43,32 @@
     </section>
   </main>
 
-<!-- Footer Section -->
-<footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
-  <div class="container mx-auto text-center space-y-2">
+<!-- Story Viewer Section -->
+<section id="storyViewer" class="hidden container mx-auto px-4 my-8">
+  <div class="bg-white rounded-lg shadow-lg p-4 space-y-4">
+    <!-- Move button into a top control row -->
+    <div class="flex justify-between items-center">
+      <button id="closeViewer" class="text-sm text-[#9c3b1b] hover:underline">
+        ← Back to Portfolio
+      </button>
+    </div>
+
+    <!-- Story iframe -->
+    <iframe id="storyFrame" class="w-full border rounded" style="height: 1000px;" src="" title="Story Viewer"></iframe>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
+    <div class="container mx-auto text-center space-y-2">
       <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
       <p class="text-sm">Designed with care and creativity.</p>
       <a href="https://bsky.app/profile/marvinlchoffman.bsky.social" target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 text-sm hover:text-white transition">
-          <img src="../../assets/images/Bluesky_butterfly-logo.svg.png" alt="Bluesky logo" width="20" height="20" />
-          <span>Follow me on Bluesky</span>
+        class="inline-flex items-center gap-2 text-sm hover:text-white transition">
+        <img src="../../assets/images/Bluesky_butterfly-logo.svg.png" alt="Bluesky logo" width="20" height="20" />
+        <span>Follow me on Bluesky</span>
       </a>
-  </div>
-</footer>
+    </div>
+  </footer>
 </body>
 </html>

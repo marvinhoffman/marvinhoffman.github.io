@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- favicon -->
+  <!-- Site settings: Title, favicon -->
   <link rel="icon" href="favicon.png" type="image/png">
   <title>Portfolio</title>
+  <!-- External links (CDN, etc) -->
+  <script src="https://kit.fontawesome.com/78600cf666.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Local links -->
   <link rel="stylesheet" href="../../css/style.css">
   <script defer src="portfolio.js"></script>
 </head>
@@ -21,6 +24,11 @@
           <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
           <li><a href="../../content/Portfolio/" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
           <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
+          <li><a href="https://bsky.app/profile/marvinlchoffman.com" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm hover:text-white transition">
+              <i class="fa-brands fa-bluesky"></i>
+          </a>
+        </li>
         </ul>
       </nav>
     </div>
@@ -65,9 +73,9 @@
     <div class="container mx-auto text-center space-y-2">
       <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
       <p class="text-sm">Designed with care and creativity.</p>
-      <a href="https://bsky.app/profile/marvinlchoffman.bsky.social" target="_blank" rel="noopener noreferrer"
+      <a href="https://bsky.app/profile/marvinlchoffman.com" target="_blank" rel="noopener noreferrer"
         class="inline-flex items-center gap-2 text-sm hover:text-white transition">
-        <img src="../../assets/images/Bluesky_butterfly-logo.svg.png" alt="Bluesky logo" width="20" height="20" />
+        <i class="fa-brands fa-bluesky"></i>
         <span>Follow me on Bluesky</span>
       </a>
     </div>

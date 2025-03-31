@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>Publications</title>
+  <script src="https://kit.fontawesome.com/78600cf666.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-[#4b2e2e] shadow p-4">
+    <div class="container mx-auto flex items-center">
+      <a href="../../index.html" class="mr-auto">
+        <img src="../../assets/sig_icon_sand.png" alt="Marvin L. C. Hoffman" class="h-10 sm:h-12 object-contain" />
+      </a>
+      <nav class="ml-auto">
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">Home</a></li>
+          <li><a href="../../content/Portfolio/" class="text-[#f4d1a1] hover:text-[#d9b48f]">Portfolio</a></li>
+          <li><a href="../../content/Publications/" class="text-[#f4d1a1] hover:text-[#d9b48f]">Publications</a></li>
+          <li><a href="../../content/about.html" class="text-[#f4d1a1] hover:text-[#d9b48f]">About</a></li>
+          <li><a href="https://bsky.app/profile/marvinlchoffman.com" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm hover:text-white transition" title="Follow me on Bluesky">
+              <i class="fa-brands fa-bluesky"></i>
+          </a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto my-8 px-4">
+    <!-- Centered heading & subtitle only -->
+    <section class="mb-10 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Portfolio</h2>
+      <p class="text-lg text-gray-600 italic mb-6">Stories, novels, and more by Marvin L. C. Hoffman</p>
+    </section>
+  
+    <!-- Left-aligned publication cards -->
+    <section>
+      <div id="publications-list" class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+        <!-- Cards inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#4b2e2e] text-[#f4d1a1] py-6">
+    <div class="container mx-auto text-center space-y-2">
+      <p class="text-sm">&copy; 2025 Marvin L. C. Hoffman. All rights reserved.</p>
+      <p class="text-sm">Designed with care and creativity.</p>
+      <a href="https://bsky.app/profile/marvinlchoffman.com" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-sm hover:text-white transition">
+        <i class="fa-brands fa-bluesky"></i>
+        <span>Follow me on Bluesky</span>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    fetch("publications.json")
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("publications-list");
+        data.forEach(pub => {
+          const wrapper = document.createElement("div");
+          wrapper.className = "w-full lg:w-[48%]";
+
+          const card = document.createElement("div");
+          card.className =
+            "bg-white rounded-xl shadow-md p-6 flex flex-col md:flex-row justify-between gap-6 hover:shadow-lg transition-shadow duration-300";
+
+          card.innerHTML = `
+            <div class="flex-1">
+              <h2 class="text-2xl font-semibold mb-2 text-center md:text-left">${pub.title}</h2>
+              <p class="text-sm text-gray-500 mb-3 text-center md:text-left">${pub.type} &bull; ${new Date(pub.date).toLocaleDateString()}</p>
+              <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                <p class="text-gray-700 text-left leading-relaxed">${pub.summary}</p>
+              </div>
+              <div class="mb-4 text-left">
+                ${pub.tags
+                  .map(
+                    tag => `
+                    <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium mr-2 mb-1 px-2.5 py-0.5 rounded-full">
+                      ${tag}
+                    </span>`
+                  )
+                  .join("")}
+              </div>
+            </div>
+            <div class="md:flex-shrink-0 md:self-center">
+              <a href="${pub.link}" target="_blank"
+                class="inline-block text-white bg-[#4b2e2e] hover:bg-[#3e2626] text-sm font-medium px-5 py-2 rounded-md whitespace-nowrap">
+                Read More | Purchase
+              </a>
+            </div>
+          `;
+
+          wrapper.appendChild(card);
+          list.appendChild(wrapper);
+        });
+      })
+      .catch(err => {
+        document.getElementById("publications-list").innerHTML =
+          "<p class='text-red-600'>Failed to load publications.</p>";
+        console.error("Error loading publications.json:", err);
+      });
+  </script>
+</body>
+</html>

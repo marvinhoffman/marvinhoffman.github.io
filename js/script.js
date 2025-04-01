@@ -4,7 +4,7 @@
 // This includes verifying syntax, functionality, and integration with other parts of the project.
 
 // Enable the random quote generation code
-fetch('assets/quotes.json')
+fetch('data/quotes.json')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);

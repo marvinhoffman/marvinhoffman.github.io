@@ -15,7 +15,7 @@ let selectedTags = [];
 
 async function loadStories() {
   try {
-    const response = await fetch('stories.json');
+    const response = await fetch('../../data/stories.json');
     stories = await response.json();
     renderTagButtons();           // Generate tag filter buttons
     filterAndRenderStories();     // Initially show all stories

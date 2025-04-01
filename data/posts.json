@@ -1,6 +1,42 @@
 [
-    { "title": "A simple story", "file": "simple_story.md" },
-    { "title": "My Summer Vacation", "file": "my_summer_vacation.md" },
-    { "title": "Daisy", "file": "daisy.md" },
-    { "title": "Whale Story", "file": "whale_story.md" }
-  ]
+  {
+    "title": "My Summer Vacation",
+    "file": "my_summer_vacation.md",
+    "date": "2025-4-1",
+    "pinned": false,
+    "tags": [
+      "general",
+      "writing"
+    ]
+  },
+  {
+    "title": "A Day, a Simple Story",
+    "file": "simple_story.md",
+    "date": "2025-03-05T00:00:00.000Z",
+    "pinned": false,
+    "tags": [
+      "general",
+      "writing"
+    ]
+  },
+  {
+    "title": "A Whale of a Tail",
+    "file": "whale_story.md",
+    "date": "2025-02-25T00:00:00.000Z",
+    "pinned": false,
+    "tags": [
+      "general",
+      "writing"
+    ]
+  },
+  {
+    "title": "A Daisy a Day",
+    "file": "daisy.md",
+    "date": "2025-01-15T00:00:00.000Z",
+    "pinned": false,
+    "tags": [
+      "general",
+      "writing"
+    ]
+  }
+]

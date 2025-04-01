@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const list = document.getElementById("publications-list");
       data.forEach(pub => {
         const wrapper = document.createElement("div");
-        wrapper.className = "w-full lg:w-[48%]";
+        //wrapper.className = "w-full";
 
         const card = document.createElement("div");
-        card.className =
-          "bg-white rounded-xl shadow-md p-6 flex flex-col md:flex-row justify-between gap-6 hover:shadow-lg transition-shadow duration-300";
+        card.className = "bg-white rounded-xl shadow-md p-6 flex flex-col gap-6 hover:shadow-lg transition-shadow duration-300";
 
         card.innerHTML = `
           <div class="flex-1">
